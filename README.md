@@ -1,10 +1,9 @@
-# English-Chinese Translator / Dictionary Website
+# Chinese-English Dictionary Website
 
-Welcome to the **English-Chinese Translator / Dictionary** project! This website provides an easy-to-use interface for translating between English and Chinese and offers dictionary functionality.
+Welcome to the **Chinese-English Dictionary** project. This website provides an easy-to-use interface for translating between English and Chinese.
 
 ## Features
 
-- **Real-time Translation**: Translate words and phrases between English and Chinese instantly.  
 - **Dictionary Functionality**: Get detailed definitions
 - **User-Friendly Interface**: Designed for simplicity and efficiency.  
 
