@@ -63,7 +63,7 @@ function displayResults(results) {
     resultsContainer.innerHTML = '';
 
     if (results.length === 0) {
-        resultsContainer.innerHTML = '<p>Sonuç bulunamadı.</p>';
+        resultsContainer.innerHTML = '<p>No results.</p>';
         return;
     }
 
