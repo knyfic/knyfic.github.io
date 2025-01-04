@@ -165,3 +165,20 @@ input[type="text"] {
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+.container {
+    text-align: center; 
+}
+.credit-container {
+    margin-bottom: 20px;
+}
+.credit {
+    font-size: 14px;
+    color: #666;
+}
+.credit a {
+    text-decoration: none;
+    color: #007bff;
+}
+.credit a:hover {
+    text-decoration: underline;
+}
