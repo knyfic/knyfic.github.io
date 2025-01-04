@@ -15,6 +15,4 @@ Visit the live website [here](http://knyfic.github.io)
 This project would not have been possible without the support and contributions of the following individuals:  
 
 - **[CC-Cedict](https://cc-cedict.org/wiki/)** – Provided the database source for English-Chinese translations.  
-- **[kevb34ns](https://github.com/kevb34ns/CEDICT2JSON)** – Converted the database source into JSON format, making it usable for this project.  
-
-Thank you for your valuable contributions and support!
+- **[kevb34ns](https://github.com/kevb34ns/CEDICT2JSON)** – Converted the database source into JSON format, making it usable for this project.
