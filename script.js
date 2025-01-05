@@ -1,13 +1,39 @@
 let jsonData = [];
 
-fetch('data.json')
-    .then(response => response.json())
-    .then(data => {
-        jsonData = data;
-    })
-    .catch(error => {
-        console.error("JSON verisi yüklenirken hata oluştu:", error);
-    });
+// Sayfa yüklendiğinde fetch işlemi başlat
+window.addEventListener('load', () => {
+    showLoadingScreen();
+
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            jsonData = data;
+            hideLoadingScreen();
+        })
+        .catch(error => {
+            console.error("JSON verisi yüklenirken hata oluştu:", error);
+            hideLoadingScreen();
+        });
+});
+
+// Yüklenme ekranını göster
+function showLoadingScreen() {
+    const loadingScreen = document.createElement('div');
+    loadingScreen.id = 'loading-screen';
+    loadingScreen.innerHTML = `
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    `;
+    document.body.appendChild(loadingScreen);
+}
+
+// Yüklenme ekranını gizle
+function hideLoadingScreen() {
+    const loadingScreen = document.getElementById('loading-screen');
+    if (loadingScreen) {
+        loadingScreen.remove();
+    }
+}
 
 // Arama işlevi
 function searchDictionary(term) {
